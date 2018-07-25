@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.DB;
 
 import com.example.demo.entity.ParkLot;
 import com.example.demo.entity.ParkingBoy;
@@ -19,7 +19,11 @@ public class MemoryDB {
 
     public MemoryDB() {
         //初始化
-
+        parkingBoys.add(new ParkingBoy(1));
+        parkingBoys.add(new ParkingBoy(2));
+        parkLots.add(new ParkLot(1,2,3,1));
+        parkLots.add(new ParkLot(2,2,3,1));
+        parkLots.add(new ParkLot(2,2,3,1));
     }
 
     public ArrayList<ParkingBoy> getParkingBoys() {

@@ -13,6 +13,9 @@ public class ParkingBoy {
 
     public int id;
 
+    public ParkingBoy() {
+    }
+
     public ParkingBoy(int id) {
 
         this.id = id;
@@ -24,5 +27,12 @@ public class ParkingBoy {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "ParkingBoy{" +
+                "id=" + id +
+                '}';
     }
 }
